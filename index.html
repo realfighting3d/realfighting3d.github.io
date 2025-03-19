@@ -10,8 +10,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <script src="https://sdk.crazygames.com/crazygames-sdk-v3.js"></script>
-  <script type="module" crossorigin src="./assets/index-D5Yji-2R.js"></script>
-  <link rel="stylesheet" crossorigin href="./assets/index-DCh7wcS7.css">
+  <script type="module" crossorigin src="./assets/index-DCf5deM9.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-DJJ8I2lV.css">
 </head>
 
 <body>
@@ -446,7 +446,7 @@
 
     async function ready(params) {
 
-        await window.CrazyGames.SDK.init();
+        // await window.CrazyGames.SDK.init();
 
         // start game
         let startupbtn = document.querySelector('.startupbtn');
@@ -518,17 +518,17 @@
             window.createPlayerSelect();
 
 
-            try {
-                // await is not mandatory when requesting banners,
-                // but it will allow you to catch errors
-                window.CrazyGames.SDK.banner.requestBanner({
-                    id: "banner-container",
-                    width: 320,
-                    height: 50,
-                });
-            } catch (e) {
-                console.log("Banner request error", e);
-            }
+            // try {
+            //     // await is not mandatory when requesting banners,
+            //     // but it will allow you to catch errors
+            //     window.CrazyGames.SDK.banner.requestBanner({
+            //         id: "banner-container",
+            //         width: 320,
+            //         height: 50,
+            //     });
+            // } catch (e) {
+            //     console.log("Banner request error", e);
+            // }
 
 
         })
@@ -553,7 +553,7 @@
             window.sceneDispose(window.playerselect.model2);
             window.creategameplay();
 
-            window.CrazyGames.SDK.banner.clearAllBanners();
+            // window.CrazyGames.SDK.banner.clearAllBanners();
 
         })
 
@@ -578,7 +578,7 @@
             window.sceneDispose(window.playerselect.model1);
             window.sceneDispose(window.playerselect.model2);
 
-            window.CrazyGames.SDK.banner.clearAllBanners();
+            // window.CrazyGames.SDK.banner.clearAllBanners();
 
         })
 
