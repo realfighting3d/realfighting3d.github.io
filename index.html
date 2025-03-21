@@ -10,8 +10,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
     <script src="https://sdk.crazygames.com/crazygames-sdk-v3.js"></script>
-  <script type="module" crossorigin src="./assets/index-DCf5deM9.js"></script>
-  <link rel="stylesheet" crossorigin href="./assets/index-DJJ8I2lV.css">
+  <script type="module" crossorigin src="./assets/index-B6X_QOVM.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-D8E2_Qtm.css">
 </head>
 
 <body>
@@ -482,8 +482,25 @@
         let actioncontainner = document.querySelector('.menuaction');
 
 
+        var elem = document.querySelector('body');
+
+        function openFullscreen() {
+
+        if (elem.requestFullscreen) {
+            elem.requestFullscreen();
+
+        } else if (elem.webkitRequestFullscreen) { /* Safari */
+            elem.webkitRequestFullscreen();
+        } else if (elem.msRequestFullscreen) { /* IE11 */
+            elem.msRequestFullscreen();
+        }
+        }
+
+
+
         // main menu
         startupbtn.addEventListener('click', () => {
+            openFullscreen();
             window.setPostprocessing();
             startupmenu.style.display = 'none';
             mainmenu.style.display = 'block';
