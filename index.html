@@ -1,0 +1,886 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Fighting 3D</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <!-- <script src="https://sdk.crazygames.com/crazygames-sdk-v3.js"></script>-->
+  <script type="module" crossorigin src="./assets/index-qfl3vB1P.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-Cg0Bb91V.css">
+</head>
+
+<body>
+    <!-- <progress value="0" max="100" id="progressBar"></progress> -->
+
+
+
+    <div class="startupmenu" style="background-image: url('output.jpg')">
+        <button class="startupbtn">Play</button>
+    </div>
+
+
+    <div class="mainmenucontainner" style="display: none;">
+        <section id="loading-screen">
+
+            <div id="loader"></div>
+
+        </section>
+
+        <div class="menu">
+            <div class="menuitem1 menuselect">
+                <p>Quick Fight</p>
+            </div>
+            <div class="menuitem2 ">
+                <p>Multiplayer</p>
+            </div>
+            <div class="menuitem3">
+                <p>Settings</p>
+            </div>
+            <div class="menuitem4">
+                <p>About</p>
+            </div>
+
+        </div>
+
+        <div class="about" style="display: none;">
+            <div class="aboutnav">
+                <button class="game">GAME</button>
+                <button class="howto">HOW TO PLAY</button>
+                <button class="developer">DEVELOPER</button>
+            </div>
+
+            <div class="developercontainner" style="display: none;">
+                <div class="profile">
+                    <div class="profileimg">
+                        <img src="./profile.jpeg" alt="" srcset="">
+                    </div>
+                    <div class="contact">
+                        <p class="title">NYOKABI ALFAYOS MUIKEN</p>
+                        <p>alphayothedeveloper@gmail.com</p>
+                        <a href="https://alphayo-the-developer.github.io/">WEBSITE</a>
+                        <a href="https://www.linkedin.com/in/alphayo-ken-70030820a/">linkedin</a>
+                    </div>
+                </div>
+
+                <p class="aboutdescription">
+                    <span class="capital">I'</span>m a game developer specializing in creating interactive 3D games
+                    using the Three.js JavaScript library. I have expertise in designing and rendering 3D graphics,
+                    managing scenes, cameras, and lighting, and integrating user interactions in a web browser.
+                </p>
+                </p>
+                <p class="aboutdescription2"> <span class="capital">I</span> leverage the power of WebGL through
+                    Three.js to build immersive environments, animations, and gameplay mechanics, ensuring smooth
+                    performance across different devices. My work often involves implementing physics, AI, and
+                    optimization techniques to create engaging and visually appealing real-time gaming experiences for
+                    players on the web.
+
+            </div>
+
+            <div class="gamecontainner">
+                <div class="profile">
+                    <div class="profileimg">
+                        <img src="./setting.png" alt="" srcset="" class="gameimg">
+                    </div>
+                    <div class="contact">
+                        <p class="title">Real Fighting 3d</p>
+                        <a href="https://alphayo-the-developer.github.io/">APPSTORE</a>
+                        <a href="https://www.linkedin.com/in/alphayo-ken-70030820a/">PLAYSTORE</a>
+                    </div>
+                </div>
+
+
+                <p class="aboutdescription"> <span class="capital">A</span> 3D fighting game that delivers
+                    fast-paced, action-packed combat, where  <span class="capital">YOU</span> step into the ring as a skilled fighter. <span class="capital">P</span>layers can
+                    battle in realistic arenas with fluid and responsive controls. </p>
+                <p class="aboutdescription2"><span class="capital">W</span>ith lifelike visuals, damage effects, and
+                    dynamic <span class="capital">AI</span>, it offers a thrilling and immersive experience where strategy,
+                    timing, and skill are key to victory.</p>
+                </p>
+            </div>
+
+            <div class="howtoplaycontainner" style="display: none;">
+                <div class="howaboutnav">
+                    <button class="movebtn">Movement</button>
+                    <button class="healthbtn">Health & Stamina</button>
+                    <button class="actionbtn">Action</button>
+                </div>
+
+                <div class="movement">
+                    <div class="moveleft">
+                        <div class="img">
+                            <img src="https://i.ibb.co/jZvNs4N/Circle.png" alt="" srcset="" class="circle">
+                            <img src="https://i.ibb.co/VS7VGpZ/joystick-red.png" alt="" srcset="" class="red">
+                            <img src="./buttons/letter-a.png" alt="" srcset="" class="a">
+
+                        </div>
+                        <div class="desc">
+                            <p>move left</p>
+                        </div>
+                    </div>
+
+                    <div class="moveright">
+                        <div class="img">
+                            <img src="https://i.ibb.co/jZvNs4N/Circle.png" alt="" srcset="" class="circle">
+                            <img src="https://i.ibb.co/VS7VGpZ/joystick-red.png" alt="" srcset="" class="red1">
+                            <img src="./buttons/letter-d.png" alt="" srcset="" class="d">
+                        </div>
+                        <div class="desc">
+                            <p>move right</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="health" style="display: none;">
+                    <div class="moveleft">
+                        <div class="img">
+                            <div class="enemyhealth-container1">
+                                <div class="enemy-progress1"></div>
+                            </div>
+                        </div>
+                        <div class="desc">
+                            <p>Shows your health points, Low health will result to a knockout.</p>
+                        </div>
+                    </div>
+
+                    <div class="moveright">
+                        <div class="img">
+                            <div class="enemystamina-container1">
+                                <div class="enemystamina-progress1"></div>
+                            </div>
+                        </div>
+                        <div class="desc">
+                            <p>Shows your stamina points. Low stamina will reduce your character's speed, block and ability to do strong attacks. </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menuaction" style="display: none;">
+                    <div class="strongattack">
+                        <div class="menuactionimg">
+                            <img src="./buttons/Square.png" alt="" srcset="">
+                            <p>or</p>
+                            <img src="./buttons/letter-l.png" alt="" srcset="">
+
+                        </div>
+                        <div class="menuactiondesc">
+                            <p>Strong Attack</p>
+                        </div>
+                    </div>
+
+                    <div class="weakattack">
+                        <div class="menuactionimg">
+                            <img src="./buttons/Circle.png" alt="" srcset="">
+                            <p>or</p>
+                            <img src="./buttons/letter-j.png" alt="" srcset="">
+                        </div>
+                        <div class="menuactiondesc">
+                            <p>Weak Attack </p>
+                        </div>
+                    </div>
+
+                    <div class="block">
+                        <div class="menuactionimg">
+                            <img src="./buttons/Cross.png" alt="" srcset="">
+                            <p>or</p>
+                            <img src="./buttons/letter-b.png" alt="" srcset="">
+                        </div>
+                        <div class="menuactiondesc">
+                            <p>Block </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="settings" style="display: none;">
+            <div class="graphics">
+                <div class="desc">
+                    <p>Graphics Quality</p>
+                </div>
+                <main class="carousel-container1">
+                    <div class="carousel">
+                        <div class="item3 active">
+                            <img src="./left-arrow.png" alt="" srcset="" class="arrowleft prev">
+                            <p class="caption">high</p>
+                            <img src="./right-arrow.png" alt="" srcset="" class="arrowright next">
+                        </div>
+                        <div class="item3">
+                            <img src="./left-arrow.png" alt="" srcset="" class="arrowleft prev">
+
+                            <p class="caption">low</p>
+                            <img src="./right-arrow.png" alt="" srcset="" class="arrowright next">
+
+                        </div>
+
+                    </div>
+                </main>
+            </div>
+
+            <div class="music">
+                <div class="desc">
+                    <p>Background Music</p>
+                </div>
+                <main class="carousel-container1">
+                    <div class="carousel">
+                        <div class="item3 active">
+                            <img src="./left-arrow.png" alt="" srcset="" class="arrowleft prev">
+                            <p class="caption">ON</p>
+                            <img src="./right-arrow.png" alt="" srcset="" class="arrowright next">
+                        </div>
+                        <div class="item3">
+                            <img src="./left-arrow.png" alt="" srcset="" class="arrowleft prev">
+
+                            <p class="caption">OFF</p>
+                            <img src="./right-arrow.png" alt="" srcset="" class="arrowright next">
+
+                        </div>
+
+                    </div>
+                </main>
+            </div>
+
+            <div class="effects">
+                <div class="desc">
+                    <p>Sound Effects</p>
+                </div>
+                <main class="carousel-container1">
+                    <div class="carousel">
+                        <div class="item3 active">
+                            <img src="./left-arrow.png" alt="" srcset="" class="arrowleft prev">
+                            <p class="caption">ON</p>
+                            <img src="./right-arrow.png" alt="" srcset="" class="arrowright next">
+                        </div>
+                        <div class="item3">
+                            <img src="./left-arrow.png" alt="" srcset="" class="arrowleft prev">
+
+                            <p class="caption">OFF</p>
+                            <img src="./right-arrow.png" alt="" srcset="" class="arrowright next">
+
+                        </div>
+
+                    </div>
+                </main>
+            </div>
+
+            <!-- <div class="controls">
+                <div class="desc">
+                    <p>Control Type</p>
+                </div>
+                <main class="carousel-container1">
+                    <div class="carousel">
+                        <div class="item3 active">
+                            <img src="/left-arrow.png" alt="" srcset="" class="arrowleft prev">
+                            <p class="caption">MOBILE</p>
+                            <img src="/right-arrow.png" alt="" srcset="" class="arrowright next">
+                        </div>
+                        <div class="item3">
+                            <img src="/left-arrow.png" alt="" srcset="" class="arrowleft prev">
+
+                            <p class="caption">KEYBOARD</p>
+                            <img src="/right-arrow.png" alt="" srcset="" class="arrowright next">
+
+                        </div>
+
+                    </div>
+                </main>
+            </div> -->
+        </div>
+    </div>
+
+    <div class="playerselectcontainner" style="display: none;">
+        <section id="loading-screen-select">
+
+            <div id="loader-select"></div>
+
+        </section>
+        <div class="playerselectlogo" style="display: none;">
+
+
+            <img src="./setting.png" alt="" srcset="" class="logo" id="playerselectlogo"></img>
+        </div>
+
+        <div class="player1settings" style="display: none;">
+            <main class="carousel-container">
+                <div class="carousel">
+                    <div class="item active">
+                        <img src="./left-arrow.png" alt="" srcset="" class="arrowleft p1prev">
+                        <p class="caption">ZOMBIE</p>
+                        <img src="./right-arrow.png" alt="" srcset="" class="arrowright p1next">
+                    </div>
+                    <div class="item">
+                        <img src="./left-arrow.png" alt="" srcset="" class="arrowleft p1prev">
+
+                        <p class="caption">MMA JANE</p>
+                        <img src="./right-arrow.png" alt="" srcset="" class="arrowright p1next">
+
+                    </div>
+                    <div class="item">
+                        <img src="./left-arrow.png" alt="" srcset="" class="arrowleft p1prev">
+
+                        <p class="caption">REMY</p>
+                        <img src="./right-arrow.png" alt="" srcset="" class="arrowright p1next">
+
+                    </div>
+                     <div class="item">
+                        <img src="./left-arrow.png" alt="" srcset="" class="arrowleft p1prev">
+
+                        <p class="caption">viking</p>
+                        <img src="./right-arrow.png" alt="" srcset="" class="arrowright p1next">
+
+                    </div>
+                </div>
+
+            </main>
+        </div>
+
+        <div class="player2settings" style="display: none;">
+            <main class="carousel-container">
+                <div class="carousel">
+                    <div class="item2 active">
+                        <img src="./left-arrow.png" alt="" srcset="" class="arrowleft p2prev">
+                        <p class="caption">MMA Jane</p>
+                        <img src="./right-arrow.png" alt="" srcset="" class="arrowright p2next">
+                    </div>
+                    <!-- <div class="item2">
+                        <img src="/left-arrow.png" alt="" srcset="" class="arrowleft p2prev">
+
+                        <p class="caption">REMY</p>
+                        <img src="/right-arrow.png" alt="" srcset="" class="arrowright p2next">
+
+                    </div>
+                    <div class="item2">
+                        <img src="/left-arrow.png" alt="" srcset="" class="arrowleft p2prev">
+
+                        <p class="caption">ZOMBIE</p>
+                        <img src="/right-arrow.png" alt="" srcset="" class="arrowright p2next">
+
+                    </div> -->
+                </div>
+
+            </main>
+        </div>
+
+        <div class="controlbtn" style="display: none;">
+            <button class="playbtn">Play</button>
+            <button class="backbtn">Back</button>
+        </div>
+
+        <!-- <div id="responsive-banner-container" style="width: 500px; height: x500px" class="adbanner"></div> -->
+        <div id="banner-container" style="width: 300px; height: 50px" class="adbanner"></div>
+    </div>
+
+
+    <!--  -->
+    <div class="gameplaycontainner" style="display: none;">
+        <section id="loading-screen-gameplay">
+
+            <div id="loader-gameplay"></div>
+
+        </section>
+        <div class="gameplaylogo" style="display: block;">
+
+
+            <img src="./pause.png" alt="" srcset="" class="logo" id="pausebtn"></img>
+            <p class="gameplaytimer" style="display: block;">60</p>
+        </div>
+        <div class="enemyhealth">
+            <div class="enemyhealth-container">
+                <div class="enemy-progress"></div>
+            </div>
+            <div class="enemystamina-container">
+                <div class="enemystamina-progress"></div>
+            </div>
+        </div>
+
+        <div class="playerhealth">
+            <div class="playerhealth-container">
+                <div class="player-progress"></div>
+            </div>
+            <div class="playerstamina-container">
+                <div class="playerstamina-progress"></div>
+            </div>
+        </div>
+
+        <div class="pausemenu" id="pausemenu" style="display: none;">
+            <div class="resume" id="resumebtn">Resume</div>
+            <div class="restart" id="restartbtn">Restart</div>
+            <div class="goplayerselct">Player Select</div>
+
+        </div>
+
+
+        <div class="buttonscontainner" style="display: none;">
+            <img src="./buttons/Square.png" alt="" srcset="" id="strong">
+            <img src="./buttons/Circle.png" alt="" srcset="" id="weak">
+            <img src="./buttons/Cross.png" alt="" srcset="" id="block">
+        </div>
+
+        <!-- <div id="banner-container1" style="width: 728px; height: 90px" class="adbannerpause"></div> -->
+
+        <div class="winner" style="display: none;">
+
+        </div>
+		
+		 <div class="startintro" style="display: none;">
+
+        </div>
+        
+    </div>
+
+    <audio src="./audio/punchface.mp3" id="punchface"></audio>
+    <audio src="./audio/punch.mp3" id="punch"></audio>
+    <audio src="./audio/kick.mp3" id="kick"></audio>
+    <audio src="./audio/bell.mp3" id="bell"></audio>
+    <audio src="./audio/hit.mp3" id="hit"></audio>
+    <!-- <audio src="./audio/block.mp3" id="block"></audio> -->
+    <audio src="./audio/pressed.mp3" id="pressed"></audio>
+    <audio src="./audio/footstep.mp3" id="footstep"></audio>
+    <audio src="./audio/background.mp3" id="background" loop></audio>
+    <!-- <audio src="./audio/background1.mp3" id="background1"></audio> -->
+    <audio src="./audio/background2.mp3" id="background2"></audio>
+
+    <!-- <script src="/main.js" type="module"></script> -->
+</body>
+
+<!-- main controller -->
+
+<script>
+
+    document.addEventListener("DOMContentLoaded", ready);
+
+    async function ready(params) {
+
+        // await window.CrazyGames.SDK.init();
+
+        // start game
+        let startupbtn = document.querySelector('.startupbtn');
+        let playbtn = document.querySelector('.playbtn');
+        let quickplaybtn = document.querySelector('.menuitem1');
+        let aboutbtn = document.querySelector('.menuitem4');
+        let settingsbtn = document.querySelector('.menuitem3');
+        let backbtn = document.querySelector('.backbtn');
+        let startupmenu = document.querySelector('.startupmenu');
+        let timer = document.querySelector('#playerselectlogo');
+        let mainmenu = document.querySelector('.mainmenucontainner');
+        let playerselectcontainner = document.querySelector('.playerselectcontainner');
+        let playerselectlogo = document.querySelector('.playerselectlogo');
+        let player1settings = document.querySelector('.player1settings');
+        let player2settings = document.querySelector('.player2settings');
+        let controlbtn = document.querySelector('.controlbtn');
+        let gameplaycontainner = document.querySelector('.gameplaycontainner');
+        let aboutcontainner = document.querySelector('.about');
+        let settingscontainner = document.querySelector('.settings');
+        let developerbtn = document.querySelector('.developer');
+        let howtobtn = document.querySelector('.howto');
+        let gamebtn = document.querySelector('.game');
+        let developercontainner = document.querySelector('.developercontainner');
+        let gamecontainner = document.querySelector('.gamecontainner');
+        let howtoplaycontainner = document.querySelector('.howtoplaycontainner');
+
+        let movementbtn = document.querySelector('.movebtn');
+        let healthbtn = document.querySelector('.healthbtn');
+        let actionbtn = document.querySelector('.actionbtn');
+
+        let movementcontainner = document.querySelector('.movement');
+        let healthcontainner = document.querySelector('.health');
+        let actioncontainner = document.querySelector('.menuaction');
+
+
+        var elem = document.querySelector('body');
+
+        function openFullscreen() {
+
+        if (elem.requestFullscreen) {
+            elem.requestFullscreen();
+
+        } else if (elem.webkitRequestFullscreen) { /* Safari */
+            elem.webkitRequestFullscreen();
+        } else if (elem.msRequestFullscreen) { /* IE11 */
+            elem.msRequestFullscreen();
+        }
+        }
+
+
+
+        // main menu
+        startupbtn.addEventListener('click', () => {
+            openFullscreen();
+			window.setPostprocessing(); 
+            startupmenu.style.display = 'none';
+            mainmenu.style.display = 'block';
+            window.createMainMenu()
+            window.pressedSound.play()
+            window.backgroundSound.play()
+            // window.blockSound.play()
+
+        })
+
+        quickplaybtn.addEventListener('click', () => {
+            window.pressedSound.play()
+
+            mainmenu.style.display = 'none';
+            playerselectcontainner.style.display = 'block';
+            playerselectlogo.style.display = 'block';
+            player1settings.style.display = 'block';
+            player2settings.style.display = 'block';
+            controlbtn.style.display = 'block';
+
+
+            const loadingScreen = document.getElementById('loading-screen-select');
+            loadingScreen.style.display = 'block';
+            loadingScreen.classList.remove('fade-out');
+
+
+            window.texturegym.dispose();
+            window.sceneDispose(window.mainmenuobj);
+            // window.sceneDispose(window.texturegym);
+
+            window.scene.background = null;
+            window.createPlayerSelect();
+
+
+            // try {
+            //     // await is not mandatory when requesting banners,
+            //     // but it will allow you to catch errors
+            //     window.CrazyGames.SDK.banner.requestBanner({
+            //         id: "banner-container",
+            //         width: 320,
+            //         height: 50,
+            //     });
+            // } catch (e) {
+            //     console.log("Banner request error", e);
+            // }
+
+
+        })
+
+        playbtn.addEventListener('click', () => {
+            window.pressedSound.play()
+
+            player1settings.style.display = 'none';
+            player2settings.style.display = 'none';
+            controlbtn.style.display = 'none';
+
+            const loadingScreen = document.getElementById('loading-screen-gameplay');
+            loadingScreen.style.display = 'block';
+            loadingScreen.classList.remove('fade-out');
+
+            gameplaycontainner.style.display = 'block';
+            timer.style.display = 'none';
+
+            window.backgroundSound.stop()
+
+            window.sceneDispose(window.playerselect.model1);
+            window.sceneDispose(window.playerselect.model2);
+            window.creategameplay();
+
+            // window.CrazyGames.SDK.banner.clearAllBanners();
+
+        })
+
+        backbtn.addEventListener('click', () => {
+		
+			aboutcontainner.style.display = 'none';
+			settingscontainner.style.display = 'none';
+			
+			settingsbtn.classList.remove("menuselect");
+            aboutbtn.classList.remove("menuselect");
+			quickplaybtn.classList.add("menuselect");
+			
+            window.pressedSound.play()
+            window.scene.background = null;
+            playerselectlogo.style.display = 'none';
+            player1settings.style.display = 'none';
+            player2settings.style.display = 'none';
+            controlbtn.style.display = 'none';
+
+            gameplaycontainner.style.display = 'none';
+            timer.style.display = 'none';
+
+            const loadingScreen = document.getElementById('loading-screen');
+            loadingScreen.style.display = 'block';
+            loadingScreen.classList.remove('fade-out');
+
+            mainmenu.style.display = 'block';
+
+            window.createMainMenu()
+            window.sceneDispose(window.playerselect.model1);
+            window.sceneDispose(window.playerselect.model2);
+
+            // window.CrazyGames.SDK.banner.clearAllBanners();
+
+        })
+
+        // settings
+        aboutbtn.addEventListener('click', () => {
+            window.pressedSound.play()
+
+            aboutcontainner.style.display = 'block';
+            aboutbtn.classList.add("menuselect");
+
+            settingscontainner.style.display = 'none';
+            settingsbtn.classList.remove("menuselect");
+            quickplaybtn.classList.remove("menuselect");
+
+        })
+
+        settingsbtn.addEventListener('click', () => {
+            window.pressedSound.play()
+
+            settingscontainner.style.display = 'flex';
+            settingsbtn.classList.add("menuselect");
+
+            aboutcontainner.style.display = 'none';
+            aboutbtn.classList.remove("menuselect");
+            quickplaybtn.classList.remove("menuselect");
+        })
+
+        developerbtn.addEventListener('click', () => {
+            window.pressedSound.play()
+
+            developercontainner.style.display = 'block';
+            // developercontainner.style.color = '#44FFD2';
+
+            gamecontainner.style.display = 'none';
+            howtoplaycontainner.style.display = 'none';
+        })
+        gamebtn.addEventListener('click', () => {
+            window.pressedSound.play()
+
+            gamecontainner.style.display = 'block';
+
+            developercontainner.style.display = 'none';
+            howtoplaycontainner.style.display = 'none';
+
+        })
+        howtobtn.addEventListener('click', () => {
+            window.pressedSound.play()
+
+            howtoplaycontainner.style.display = 'block';
+
+            developercontainner.style.display = 'none';
+            gamecontainner.style.display = 'none';
+
+        })
+
+
+
+        // settings
+        movementbtn.addEventListener('click', () => {
+            window.pressedSound.play()
+
+            movementcontainner.style.display = 'block';
+
+            healthcontainner.style.display = 'none';
+            actioncontainner.style.display = 'none';
+        })
+
+        healthbtn.addEventListener('click', () => {
+            window.pressedSound.play()
+
+            healthcontainner.style.display = 'flex';
+
+
+            movementcontainner.style.display = 'none';
+
+            actioncontainner.style.display = 'none';
+        })
+
+        actionbtn.addEventListener('click', () => {
+            window.pressedSound.play()
+
+            actioncontainner.style.display = 'block';
+
+
+            healthcontainner.style.display = 'none';
+
+
+            movementcontainner.style.display = 'none';
+
+        })
+
+
+
+        // set settings
+
+
+        if (localStorage.getItem("settings") === null) {
+            window.gamesettings = {
+                background: 'on',
+                effects: 'on',
+                quality: 'high',
+                controls: 'mobile',
+            }
+        } else {
+            const localStorageItem = localStorage.getItem("settings")
+            window.gamesettings = JSON.parse(localStorageItem)
+             correctSettings();
+        }
+
+
+        function correctSettings() {
+           /** let prevbtns = document.querySelector('.prev');
+            let item = prevbtns.parentElement.parentElement;
+            let items2 = item.querySelectorAll('.item3');
+            console.log(items2) **/
+			
+			//music
+			let parent = document.querySelector('.music');
+			let children = parent.querySelectorAll('.item3');
+			children.forEach((child,index)=> {
+				if(window.gamesettings.background === 'on'){
+					if(index == 0){
+						child.classList.add("active");
+					}else {
+						child.classList.remove("active");
+					}
+				}else {
+				if(index == 1){
+						child.classList.add("active");
+					}else {
+						child.classList.remove("active");
+					}
+				}
+			});
+			
+			//effects
+			let parente = document.querySelector('.effects');
+			let childrene = parente.querySelectorAll('.item3');
+			childrene.forEach((child,index)=> {
+				if(window.gamesettings.effects === 'on'){
+					if(index == 0){
+						child.classList.add("active");
+					}else {
+						child.classList.remove("active");
+					}
+				}else {
+				if(index == 1){
+						child.classList.add("active");
+					}else {
+						child.classList.remove("active");
+					}
+				}
+			});
+			
+			// graphics
+			let parentg = document.querySelector('.graphics');
+			let childreng = parentg.querySelectorAll('.item3');
+			childreng.forEach((child,index)=> {
+				if(window.gamesettings.quality === 'high'){
+					if(index == 0){
+						child.classList.add("active");
+					}else {
+						child.classList.remove("active");
+					}
+				}else {
+				if(index == 1){
+						child.classList.add("active");
+					}else {
+						child.classList.remove("active");
+					}
+				}
+			});
+			
+        }
+
+        function saveSettings(key, el) {
+            switch (key) {
+                case 'graphics':
+                    window.gamesettings.quality = el
+					setPostprocessing()
+                    break;
+                case 'music':
+                    window.gamesettings.background = el
+					window.backgroundSound.play()
+
+                    break;
+                case 'effects':
+                    window.gamesettings.effects = el
+
+                    break;
+                case 'controls':
+                    window.gamesettings.controls = el
+
+                    break;
+
+
+            }
+
+            localStorage.setItem("settings", JSON.stringify(window.gamesettings))
+
+        }
+
+
+        function setSettings() {
+            // Function to show a specific item
+            function showItem2(index, items) {
+                // let items = 
+                items.forEach((item, idx) => {
+                    item.classList.remove("active");
+                    if (idx === index) {
+                        item.classList.add("active");
+                        item = item;
+                        let el = item.querySelector('.caption').innerText.toLowerCase();
+                        let settingel = item.parentElement.parentElement.parentElement.className;
+                        saveSettings(settingel, el)
+                    }
+
+
+
+                });
+
+
+            }
+
+            // Event listeners for buttons
+            let prevbtns = document.querySelectorAll('.prev')
+            let nextbtns = document.querySelectorAll('.next')
+
+            nextbtns.forEach((btn) => {
+                let item = btn.parentElement.parentElement
+                let items2 = item.querySelectorAll('.item3');
+                btn.addEventListener("click", () => {
+                    window.pressedSound.play();
+                    let index = [...items2].findIndex((item) =>
+                        item.classList.contains("active")
+                    );
+                    showItem2((index - 1 + items2.length) % items2.length, items2);
+
+                });
+
+            })
+
+            prevbtns.forEach((btn) => {
+                let item = btn.parentElement.parentElement
+                let items2 = item.querySelectorAll('.item3');
+                btn.addEventListener("click", () => {
+                    window.pressedSound.play();
+                    let index = [...items2].findIndex((item) =>
+                        item.classList.contains("active")
+                    );
+                    showItem2((index - 1 + items2.length) % items2.length, items2);
+
+                });
+            })
+
+            localStorage.setItem("settings", JSON.stringify(window.gamesettings))
+
+            const localStorageItem = localStorage.getItem("settings")
+            const tokenObject = JSON.parse(localStorageItem)
+
+        }
+
+
+        setSettings();
+
+    }
+</script>
+
+</html>
