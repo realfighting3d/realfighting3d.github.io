@@ -496,9 +496,12 @@
         var elem = document.querySelector('body');
 
         function openFullscreen() {
-
+        
         if (elem.requestFullscreen) {
-            elem.requestFullscreen();
+        ;
+            elem.requestFullscreen().then(()=>{
+                window.screen.orientation.lock('landscape');
+            });
 
         } else if (elem.webkitRequestFullscreen) { /* Safari */
             elem.webkitRequestFullscreen();
