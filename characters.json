@@ -1,447 +1,510 @@
 {
-    "zombie": {
-      "name": "zombie",
+  "zombie": {
+    "name": "zombie",
+    "animations": {
+      "idle": "zombie/zombieidle.glb",
       "animations": {
-        "idle": "zombie/zombieidle.glb",
-        "animations": {
-          "strongAttackL": {
-            "action": "strongAttackL",
-            "address": "zombie/attacks/strongAttackL.glb",
-            "attackpart":"rightarm"
-          },
-          "weakAttackL": {
-            "action": "weakAttackL",
-            "address": "zombie/attacks/weakAttackL.glb",
-            "attackpart":"rightarm"
-          },
-          "strongAttackS": {
-            "action": "strongAttackS",
-            "address": "zombie/attacks/strongAttackS.glb",
-            "attackpart":"rightfoot"
-
-          },
-          "victory": {
-            "action": "victory",
-            "address": "zombie/victory.glb"
-          },
-          "knockOut": {
-            "action": "knockOut",
-            "address": "zombie/knockout.glb"
-          },
-          "knockOut1": {
-            "action": "knockOut1",
-            "address": "zombie/knockout.glb"
-          },
-          "weakAttackS": {
-            "action": "weakAttackS",
-            "address": "zombie/attacks/weakAttackS.glb",
-            "attackpart":"rightarm"
-          }
-          ,
-          "stepforward": {
-            "action": "stepforward",
-            "address": "zombie/stepforward.glb"
-          }
-          ,
-          "stepback": {
-            "action": "stepback",
-            "address": "zombie/stepback.glb"
-          },
-          "rightstep": {
-            "action": "rightstep",
-            "address": "zombie/rightstep.glb"
-          },
-          "leftstep": {
-            "action": "leftstep",
-            "address": "zombie/leftstep.glb"
-          },
-          "bigheadHitC": {
-            "action": "bigheadHitC",
-            "address": "zombie/hits/bigheadHitC.glb"
-          },
-          "bigheadHitC1": {
-            "action": "bigheadHitC1",
-            "address": "zombie/hits/bigheadHitC1.glb"
-          },
-          "bigheadHitL": {
-            "action": "bigheadHitL",
-            "address": "zombie/hits/bigheadHitL.glb"
-          },
-          "bigheadHitR": {
-            "action": "bigheadHitR",
-            "address": "zombie/hits/bigheadHitR.glb"
-          },
-          "bigStomachHit": {
-            "action": "bigStomachHit",
-            "address": "zombie/hits/bigStomachHit.glb"
-          },
-          "smallheadHitC": {
-            "action": "smallheadHitC",
-            "address": "zombie/hits/smallheadHitC.glb"
-          },
-          "smallStomachHit": {
-            "action": "smallStomachHit",
-            "address": "zombie/hits/smallStomachHit.glb"
-          }
+        "strongAttackL": {
+          "action": "strongAttackL",
+          "address": "zombie/attacks/strongAttackL.glb",
+          "attackpart": "rightarm"
+        },
+        "weakAttackL": {
+          "action": "weakAttackL",
+          "address": "zombie/attacks/weakAttackL.glb",
+          "attackpart": "rightarm"
+        },
+        "strongAttackS": {
+          "action": "strongAttackS",
+          "address": "zombie/attacks/strongAttackS.glb",
+          "attackpart": "rightfoot"
+        },
+        "victory": {
+          "action": "victory",
+          "address": "zombie/victory.glb"
+        },
+        "knockOut": {
+          "action": "knockOut",
+          "address": "zombie/knockout.glb"
+        },
+        "knockOut1": {
+          "action": "knockOut1",
+          "address": "zombie/knockout.glb"
+        },
+        "weakAttackS": {
+          "action": "weakAttackS",
+          "address": "zombie/attacks/weakAttackS.glb",
+          "attackpart": "rightarm"
+        },
+        "stepforward": {
+          "action": "stepforward",
+          "address": "zombie/stepforward.glb"
+        },
+        "stepback": {
+          "action": "stepback",
+          "address": "zombie/stepback.glb"
+        },
+        "rightstep": {
+          "action": "rightstep",
+          "address": "zombie/rightstep.glb"
+        },
+        "leftstep": {
+          "action": "leftstep",
+          "address": "zombie/leftstep.glb"
+        },
+        "bigheadHitC": {
+          "action": "bigheadHitC",
+          "address": "zombie/hits/bigheadHitC.glb"
+        },
+        "bigheadHitC1": {
+          "action": "bigheadHitC1",
+          "address": "zombie/hits/bigheadHitC1.glb"
+        },
+        "bigheadHitL": {
+          "action": "bigheadHitL",
+          "address": "zombie/hits/bigheadHitL.glb"
+        },
+        "bigheadHitR": {
+          "action": "bigheadHitR",
+          "address": "zombie/hits/bigheadHitR.glb"
+        },
+        "bigStomachHit": {
+          "action": "bigStomachHit",
+          "address": "zombie/hits/bigStomachHit.glb"
+        },
+        "smallheadHitC": {
+          "action": "smallheadHitC",
+          "address": "zombie/hits/smallheadHitC.glb"
+        },
+        "smallStomachHit": {
+          "action": "smallStomachHit",
+          "address": "zombie/hits/smallStomachHit.glb"
+        },
+        "block": {
+          "action": "block",
+          "address": "zombie/block.glb"
         }
       }
-    },
-    "mma": {
-      "name": "mma",
+    }
+  },
+  "mma": {
+    "name": "mma",
+    "animations": {
+      "idle": "mma/mmaidle.glb",
       "animations": {
-        "idle": "mma/mmaidle.glb",
-        "animations": {
-          "strongAttackL": {
-            "action": "strongAttackL",
-            "address": "mma/attacks/strongAttackL.glb",
-            "attackpart":"rightarm"
-          },
-          "weakAttackL": {
-            "action": "weakAttackL",
-            "address": "mma/attacks/weakAttackL.glb",
-            "attackpart":"leftarm"
-
-          },
-          "knockOut": {
-            "action": "knockOut",
-            "address": "mma/knockout.glb"
-          },
-          "knockOut1": {
-            "action": "knockOut1",
-            "address": "mma/knockout.glb"
-          },
-          "victory": {
-            "action": "victory",
-            "address": "mma/victory.glb"
-          },
-          "strongAttackS": {
-            "action": "strongAttackS",
-            "address": "mma/attacks/strongAttackS.glb",
-            "attackpart":"leftfoot"
-
-          },
-          "weakAttackS": {
-            "action": "weakAttackS",
-            "address": "mma/attacks/weakAttackS.glb",
-            "attackpart":"rightarm"
-          }
-          ,
-          "stepforward": {
-            "action": "stepforward",
-            "address": "mma/stepforward.glb"
-          }
-          ,
-          "stepback": {
-            "action": "stepback",
-            "address": "mma/stepbackward.glb"
-          },
-          "rightstep": {
-            "action": "rightstep",
-            "address": "mma/rightstep.glb"
-          },
-          "leftstep": {
-            "action": "leftstep",
-            "address": "mma/leftstep.glb"
-          },
-          "bigheadHitC": {
-            "action": "bigheadHitC",
-            "address": "mma/hits/bigheadHitC.glb"
-          },
-         
-          "bigheadHitL": {
-            "action": "bigheadHitL",
-            "address": "mma/hits/bigheadHitL.glb"
-          },
-          "bigheadHitR": {
-            "action": "bigheadHitR",
-            "address": "mma/hits/bigheadHitR.glb"
-          },
-          "bigStomachHit": {
-            "action": "bigStomachHit",
-            "address": "mma/hits/bigStomachHit.glb"
-          },
-          "smallheadHitC": {
-            "action": "smallheadHitC",
-            "address": "mma/hits/smallheadHitC.glb"
-          },
-          "smallStomachHit": {
-            "action": "smallStomachHit",
-            "address": "mma/hits/smallStomachHit.glb"
-          }
+        "strongAttackL": {
+          "action": "strongAttackL",
+          "address": "mma/attacks/strongAttackL.glb",
+          "attackpart": "rightarm"
+        },
+        "weakAttackL": {
+          "action": "weakAttackL",
+          "address": "mma/attacks/weakAttackL.glb",
+          "attackpart": "leftarm"
+        },
+        "knockOut": {
+          "action": "knockOut",
+          "address": "mma/knockout.glb"
+        },
+        "knockOut1": {
+          "action": "knockOut1",
+          "address": "mma/knockout.glb"
+        },
+        "victory": {
+          "action": "victory",
+          "address": "mma/victory.glb"
+        },
+        "strongAttackS": {
+          "action": "strongAttackS",
+          "address": "mma/attacks/strongAttackS.glb",
+          "attackpart": "leftfoot"
+        },
+        "weakAttackS": {
+          "action": "weakAttackS",
+          "address": "mma/attacks/weakAttackS.glb",
+          "attackpart": "rightarm"
+        },
+        "stepforward": {
+          "action": "stepforward",
+          "address": "mma/stepforward.glb"
+        },
+        "stepback": {
+          "action": "stepback",
+          "address": "mma/stepbackward.glb"
+        },
+        "rightstep": {
+          "action": "rightstep",
+          "address": "mma/rightstep.glb"
+        },
+        "leftstep": {
+          "action": "leftstep",
+          "address": "mma/leftstep.glb"
+        },
+        "bigheadHitC": {
+          "action": "bigheadHitC",
+          "address": "mma/hits/bigheadHitC.glb"
+        },
+        "bigheadHitL": {
+          "action": "bigheadHitL",
+          "address": "mma/hits/bigheadHitL.glb"
+        },
+        "bigheadHitR": {
+          "action": "bigheadHitR",
+          "address": "mma/hits/bigheadHitR.glb"
+        },
+        "bigStomachHit": {
+          "action": "bigStomachHit",
+          "address": "mma/hits/bigStomachHit.glb"
+        },
+        "smallheadHitC": {
+          "action": "smallheadHitC",
+          "address": "mma/hits/smallheadHitC.glb"
+        },
+        "smallStomachHit": {
+          "action": "smallStomachHit",
+          "address": "mma/hits/smallStomachHit.glb"
+        },
+        "block": {
+          "action": "block",
+          "address": "mma/block.glb"
         }
       }
-    },
-    "remy": {
-      "name": "remy",
+    }
+  },
+  "remy": {
+    "name": "remy",
+    "animations": {
+      "idle": "remy/remy.glb",
       "animations": {
-        "idle": "remy/remy.glb",
-        "animations": {
-          "strongAttackS": {
-            "action": "strongAttackS",
-            "address": "remy/attacks/strongAttackL.glb",
-            "attackpart":"rightfoot"
-          },
-          "weakAttackS": {
-            "action": "weakAttackS",
-            "address": "remy/attacks/weakAttackL.glb",
-            "attackpart":"rightarm"
-
-          },
-          "knockOut": {
-            "action": "knockOut",
-            "address": "remy/knockout.glb"
-          },
-          "knockOut1": {
-            "action": "knockOut1",
-            "address": "remy/knockout.glb"
-          },
-          "victory": {
-            "action": "victory",
-            "address": "remy/victory.glb"
-          },
-          
-          "strongAttackL": {
-            "action": "strongAttackL",
-            "address": "remy/attacks/strongAttackS.glb",
-            "attackpart":"rightarm"
-
-          },
-          "weakAttackL": {
-            "action": "weakAttackL",
-            "address": "remy/attacks/weakAttackS.glb",
-            "attackpart":"rightfoot"
-          }
-          ,
-          "stepforward": {
-            "action": "stepforward",
-            "address": "remy/stepforward.glb"
-          }
-          ,
-          "stepback": {
-            "action": "stepback",
-            "address": "remy/stepback.glb"
-          },
-          "rightstep": {
-            "action": "rightstep",
-            "address": "remy/rightstep.glb"
-          },
-          "leftstep": {
-            "action": "leftstep",
-            "address": "remy/leftstep.glb"
-          },
-          "bigheadHitC": {
-            "action": "bigheadHitC",
-            "address": "remy/hits/bigheadHitC.glb"
-          },
-         
-          "bigheadHitL": {
-            "action": "bigheadHitL",
-            "address": "remy/hits/bigheadHitL.glb"
-          },
-          "bigheadHitR": {
-            "action": "bigheadHitR",
-            "address": "remy/hits/bigheadHitR.glb"
-          },
-          "bigStomachHit": {
-            "action": "bigStomachHit",
-            "address": "remy/hits/bigStomachHit.glb"
-          },
-          "smallheadHitC": {
-            "action": "smallheadHitC",
-            "address": "remy/hits/smallheadHitC.glb"
-          },
-          "smallStomachHit": {
-            "action": "smallStomachHit",
-            "address": "remy/hits/smallStomachHit.glb"
-          },
-		  "block": {
-            "action": "block",
-            "address": "remy/block.glb"
-          }
+        "strongAttackS": {
+          "action": "strongAttackS",
+          "address": "remy/attacks/strongAttackL.glb",
+          "attackpart": "rightfoot"
+        },
+        "weakAttackS": {
+          "action": "weakAttackS",
+          "address": "remy/attacks/weakAttackL.glb",
+          "attackpart": "rightarm"
+        },
+        "knockOut": {
+          "action": "knockOut",
+          "address": "remy/knockout.glb"
+        },
+        "knockOut1": {
+          "action": "knockOut1",
+          "address": "remy/knockout.glb"
+        },
+        "victory": {
+          "action": "victory",
+          "address": "remy/victory.glb"
+        },
+        "strongAttackL": {
+          "action": "strongAttackL",
+          "address": "remy/attacks/strongAttackS.glb",
+          "attackpart": "rightarm"
+        },
+        "weakAttackL": {
+          "action": "weakAttackL",
+          "address": "remy/attacks/weakAttackS.glb",
+          "attackpart": "rightfoot"
+        },
+        "stepforward": {
+          "action": "stepforward",
+          "address": "remy/stepforward.glb"
+        },
+        "stepback": {
+          "action": "stepback",
+          "address": "remy/stepback.glb"
+        },
+        "rightstep": {
+          "action": "rightstep",
+          "address": "remy/rightstep.glb"
+        },
+        "leftstep": {
+          "action": "leftstep",
+          "address": "remy/leftstep.glb"
+        },
+        "bigheadHitC": {
+          "action": "bigheadHitC",
+          "address": "remy/hits/bigheadHitC.glb"
+        },
+        "bigheadHitL": {
+          "action": "bigheadHitL",
+          "address": "remy/hits/bigheadHitL.glb"
+        },
+        "bigheadHitR": {
+          "action": "bigheadHitR",
+          "address": "remy/hits/bigheadHitR.glb"
+        },
+        "bigStomachHit": {
+          "action": "bigStomachHit",
+          "address": "remy/hits/bigStomachHit.glb"
+        },
+        "smallheadHitC": {
+          "action": "smallheadHitC",
+          "address": "remy/hits/smallheadHitC.glb"
+        },
+        "smallStomachHit": {
+          "action": "smallStomachHit",
+          "address": "remy/hits/smallStomachHit.glb"
+        },
+        "block": {
+          "action": "block",
+          "address": "remy/block.glb"
         }
       }
-    },
-   
-    "baller": {
-      "name": "baller",
+    }
+  },
+  "soldier": {
+    "name": "soldier",
+    "animations": {
+      "idle": "soldier/soldier.glb",
       "animations": {
-        "idle": "viking/balleridle.glb",
-        "animations": {
-          "strongAttackS": {
-            "action": "strongAttackS",
-            "address": "viking/attacks/strongAttackL.glb",
-            "attackpart":"rightfoot"
-          },
-          "weakAttackS": {
-            "action": "weakAttackS",
-            "address": "viking/attacks/weakAttackL.glb",
-            "attackpart":"rightarm"
-
-          },
-          "knockOut": {
-            "action": "knockOut",
-            "address": "viking/knockout.glb"
-          },
-          "knockOut1": {
-            "action": "knockOut1",
-            "address": "viking/knockout.glb"
-          },
-          "victory": {
-            "action": "victory",
-            "address": "viking/victory.glb"
-          },
-          
-          "strongAttackL": {
-            "action": "strongAttackL",
-            "address": "viking/attacks/strongAttackS.glb",
-            "attackpart":"rightarm"
-
-          },
-          "weakAttackL": {
-            "action": "weakAttackL",
-            "address": "viking/attacks/weakAttackS.glb",
-            "attackpart":"rightfoot"
-          }
-          ,
-          "stepforward": {
-            "action": "stepforward",
-            "address": "viking/stepforward.glb"
-          }
-          ,
-          "stepback": {
-            "action": "stepback",
-            "address": "viking/stepback.glb"
-          },
-          "rightstep": {
-            "action": "rightstep",
-            "address": "viking/rightstep.glb"
-          },
-          "leftstep": {
-            "action": "leftstep",
-            "address": "viking/leftstep.glb"
-          },
-          "bigheadHitC": {
-            "action": "bigheadHitC",
-            "address": "viking/hits/bigheadHitC.glb"
-          },
-         
-          "bigheadHitL": {
-            "action": "bigheadHitL",
-            "address": "viking/hits/bigheadHitL.glb"
-          },
-          "bigheadHitR": {
-            "action": "bigheadHitR",
-            "address": "viking/hits/bigheadHitR.glb"
-          },
-          "bigStomachHit": {
-            "action": "bigStomachHit",
-            "address": "viking/hits/bigStomachHit.glb"
-          },
-          "smallheadHitC": {
-            "action": "smallheadHitC",
-            "address": "viking/hits/smallheadHitC.glb"
-          },
-          "smallStomachHit": {
-            "action": "smallStomachHit",
-            "address": "viking/hits/smallStomachHit.glb"
-          },
-		  "block": {
-            "action": "block",
-            "address": "viking/block.glb"
-          }
+        "strongAttackS": {
+          "action": "strongAttackS",
+          "address": "soldier/attacks/strongAttackL.glb",
+          "attackpart": "leftarm"
+        },
+        "weakAttackS": {
+          "action": "weakAttackS",
+          "address": "soldier/attacks/weakAttackL.glb",
+          "attackpart": "rightarm"
+        },
+        "knockOut": {
+          "action": "knockOut",
+          "address": "soldier/knockout.glb"
+        },
+        "knockOut1": {
+          "action": "knockOut1",
+          "address": "soldier/knockout.glb"
+        },
+        "victory": {
+          "action": "victory",
+          "address": "soldier/victory.glb"
+        },
+        "strongAttackL": {
+          "action": "strongAttackL",
+          "address": "soldier/attacks/strongAttackS.glb",
+          "attackpart": "rightknee"
+        },
+        "weakAttackL": {
+          "action": "weakAttackL",
+          "address": "soldier/attacks/weakAttackL.glb",
+          "attackpart": "rightarm"
+        },
+        "stepforward": {
+          "action": "stepforward",
+          "address": "soldier/stepforward.glb"
+        },
+        "stepback": {
+          "action": "stepback",
+          "address": "soldier/stepback.glb"
+        },
+        "rightstep": {
+          "action": "rightstep",
+          "address": "soldier/rightstep.glb"
+        },
+        "leftstep": {
+          "action": "leftstep",
+          "address": "soldier/leftstep.glb"
+        },
+        "bigheadHitC": {
+          "action": "bigheadHitC",
+          "address": "soldier/hits/bigheadHitC.glb"
+        },
+        "bigheadHitL": {
+          "action": "bigheadHitL",
+          "address": "soldier/hits/bigheadHitL.glb"
+        },
+        "bigheadHitR": {
+          "action": "bigheadHitR",
+          "address": "soldier/hits/bigheadHitR.glb"
+        },
+        "bigStomachHit": {
+          "action": "bigStomachHit",
+          "address": "soldier/hits/bigStomachHit.glb"
+        },
+        "smallheadHitC": {
+          "action": "smallheadHitC",
+          "address": "soldier/hits/smallheadHitC.glb"
+        },
+        "smallStomachHit": {
+          "action": "smallStomachHit",
+          "address": "soldier/hits/smallStomachHit.glb"
+        },
+        "block": {
+          "action": "block",
+          "address": "soldier/block.glb"
         }
       }
-    },
-    "viking": {
-      "name": "viking",
+    }
+  },
+  "yamiko": {
+    "name": "yamiko",
+    "animations": {
+      "idle": "yamiko/yamikoidle.glb",
       "animations": {
-        "idle": "viking/viking.glb",
-        "animations": {
-          "strongAttackS": {
-            "action": "strongAttackS",
-            "address": "viking/attacks/strongAttackL.glb",
-            "attackpart":"rightfoot"
-          },
-          "weakAttackS": {
-            "action": "weakAttackS",
-            "address": "viking/attacks/weakAttackL.glb",
-            "attackpart":"rightarm"
-
-          },
-          "knockOut": {
-            "action": "knockOut",
-            "address": "viking/knockout.glb"
-          },
-          "knockOut1": {
-            "action": "knockOut1",
-            "address": "viking/knockout.glb"
-          },
-          "victory": {
-            "action": "victory",
-            "address": "viking/victory.glb"
-          },
-          
-          "strongAttackL": {
-            "action": "strongAttackL",
-            "address": "viking/attacks/strongAttackS.glb",
-            "attackpart":"rightarm"
-
-          },
-          "weakAttackL": {
-            "action": "weakAttackL",
-            "address": "viking/attacks/weakAttackS.glb",
-            "attackpart":"rightfoot"
-          }
-          ,
-          "stepforward": {
-            "action": "stepforward",
-            "address": "viking/stepforward.glb"
-          }
-          ,
-          "stepback": {
-            "action": "stepback",
-            "address": "viking/stepback.glb"
-          },
-          "rightstep": {
-            "action": "rightstep",
-            "address": "viking/rightstep.glb"
-          },
-          "leftstep": {
-            "action": "leftstep",
-            "address": "viking/leftstep.glb"
-          },
-          "bigheadHitC": {
-            "action": "bigheadHitC",
-            "address": "viking/hits/bigheadHitC.glb"
-          },
-         
-          "bigheadHitL": {
-            "action": "bigheadHitL",
-            "address": "viking/hits/bigheadHitL.glb"
-          },
-          "bigheadHitR": {
-            "action": "bigheadHitR",
-            "address": "viking/hits/bigheadHitR.glb"
-          },
-          "bigStomachHit": {
-            "action": "bigStomachHit",
-            "address": "viking/hits/bigStomachHit.glb"
-          },
-          "smallheadHitC": {
-            "action": "smallheadHitC",
-            "address": "viking/hits/smallheadHitC.glb"
-          },
-          "smallStomachHit": {
-            "action": "smallStomachHit",
-            "address": "viking/hits/smallStomachHit.glb"
-          },
-		  "block": {
-            "action": "block",
-            "address": "viking/block.glb"
-          }
+        "strongAttackS": {
+          "action": "strongAttackS",
+          "address": "yamiko/attacks/strongAttackL.glb",
+          "attackpart": "rightfoot"
+        },
+        "weakAttackS": {
+          "action": "weakAttackS",
+          "address": "yamiko/attacks/weakAttackS.glb",
+          "attackpart": "leftarm"
+        },
+        "knockOut": {
+          "action": "knockOut",
+          "address": "yamiko/knockout.glb"
+        },
+        "knockOut1": {
+          "action": "knockOut1",
+          "address": "yamiko/knockout.glb"
+        },
+        "victory": {
+          "action": "victory",
+          "address": "yamiko/victory.glb"
+        },
+        "strongAttackL": {
+          "action": "strongAttackL",
+          "address": "yamiko/attacks/strongAttackS.glb",
+          "attackpart": "rightarm"
+        },
+        "weakAttackL": {
+          "action": "weakAttackL",
+          "address": "yamiko/attacks/weakAttackL.glb",
+          "attackpart": "rightfoot"
+        },
+        "stepforward": {
+          "action": "stepforward",
+          "address": "yamiko/stepforward.glb"
+        },
+        "stepback": {
+          "action": "stepback",
+          "address": "yamiko/stepback.glb"
+        },
+        "rightstep": {
+          "action": "rightstep",
+          "address": "yamiko/rightstep.glb"
+        },
+        "leftstep": {
+          "action": "leftstep",
+          "address": "yamiko/leftstep.glb"
+        },
+        "bigheadHitC": {
+          "action": "bigheadHitC",
+          "address": "yamiko/hits/bigheadHitC.glb"
+        },
+        "bigheadHitL": {
+          "action": "bigheadHitL",
+          "address": "yamiko/hits/bigheadHitL.glb"
+        },
+        "bigheadHitR": {
+          "action": "bigheadHitR",
+          "address": "yamiko/hits/bigheadHitR.glb"
+        },
+        "bigStomachHit": {
+          "action": "bigStomachHit",
+          "address": "yamiko/hits/bigStomachHit.glb"
+        },
+        "smallheadHitC": {
+          "action": "smallheadHitC",
+          "address": "yamiko/hits/smallheadHitC.glb"
+        },
+        "smallStomachHit": {
+          "action": "smallStomachHit",
+          "address": "yamiko/hits/smallStomachHit.glb"
+        },
+        "block": {
+          "action": "block",
+          "address": "yamiko/block.glb"
+        }
+      }
+    }
+  },
+  "spidey": {
+    "name": "spidey",
+    "animations": {
+      "idle": "spidey/spidey.glb",
+      "animations": {
+        "strongAttackS": {
+          "action": "strongAttackS",
+          "address": "spidey/attacks/strongAttackL.glb",
+          "attackpart": "leftarm"
+        },
+        "weakAttackS": {
+          "action": "weakAttackS",
+          "address": "spidey/attacks/weakAttackS.glb",
+          "attackpart": "leftfoot"
+        },
+        "knockOut": {
+          "action": "knockOut",
+          "address": "spidey/knockout.glb"
+        },
+        "knockOut1": {
+          "action": "knockOut1",
+          "address": "spidey/knockout.glb"
+        },
+        "victory": {
+          "action": "victory",
+          "address": "spidey/victory.glb"
+        },
+        "strongAttackL": {
+          "action": "strongAttackL",
+          "address": "spidey/attacks/strongAttackS.glb",
+          "attackpart": "rightfoot"
+        },
+        "weakAttackL": {
+          "action": "weakAttackL",
+          "address": "spidey/attacks/weakAttackL.glb",
+          "attackpart": "rightfoot"
+        },
+        "stepforward": {
+          "action": "stepforward",
+          "address": "spidey/stepforward.glb"
+        },
+        "stepback": {
+          "action": "stepback",
+          "address": "spidey/stepback.glb"
+        },
+        "rightstep": {
+          "action": "rightstep",
+          "address": "spidey/rightstep.glb"
+        },
+        "leftstep": {
+          "action": "leftstep",
+          "address": "spidey/leftstep.glb"
+        },
+        "bigheadHitC": {
+          "action": "bigheadHitC",
+          "address": "spidey/hits/bigheadHitC.glb"
+        },
+        "bigheadHitL": {
+          "action": "bigheadHitL",
+          "address": "spidey/hits/bigheadHitL.glb"
+        },
+        "bigheadHitR": {
+          "action": "bigheadHitR",
+          "address": "spidey/hits/bigheadHitR.glb"
+        },
+        "bigStomachHit": {
+          "action": "bigStomachHit",
+          "address": "spidey/hits/bigStomachHit.glb"
+        },
+        "smallheadHitC": {
+          "action": "smallheadHitC",
+          "address": "spidey/hits/smallheadHitC.glb"
+        },
+        "smallStomachHit": {
+          "action": "smallStomachHit",
+          "address": "spidey/hits/smallStomachHit.glb"
+        },
+        "block": {
+          "action": "block",
+          "address": "spidey/block.glb"
         }
       }
     }
   }
-
- 
+}
